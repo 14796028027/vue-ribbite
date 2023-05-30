@@ -16,6 +16,6 @@ httpInstance.interceptors.request.use(config => {
 //axios响应拦截器
 httpInstance.interceptors.response.use(res => res.data, e =>{
     return Promise.reject(e)
-})
+},e => Promise.reject(e))
 
 export default httpInstance
