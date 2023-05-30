@@ -32,7 +32,11 @@ export default defineConfig({
     preprocessorOptions:{
       scss:{
         //sacc：2.自动导入自定义样式文件进行覆盖
-        additionalData:`@use "@/styles/element/index.scss" as *;`,
+        additionalData:`
+        @use "@/styles/element/index.scss" as *;
+        @use "@/styles/element/var.scss" as *;
+        `
+        ,
       }
     }
   }
