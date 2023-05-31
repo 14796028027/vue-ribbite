@@ -2,8 +2,8 @@
 import { useCategoryStore } from '@/stores/category';
 
 const CategoryStore = useCategoryStore()
-console.log("1",CategoryStore)
-console.log("2",CategoryStore.categoryList)
+
+
 
 </script>
 
